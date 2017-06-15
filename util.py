@@ -17,3 +17,6 @@ def stock_code_to_wind_code(stock):
         return inner_stock[0:6] + '.SZ'
     else:
         return 'ERROR.STOCK'
+    
+def string_into_sql(string):
+    return '\'' + string + '\''
